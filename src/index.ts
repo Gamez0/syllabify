@@ -1,3 +1,3 @@
-import syllabify from './syllabify';
+import syllabify from './lib/syllabify';
 
-export { syllabify };
+module.exports = syllabify;
