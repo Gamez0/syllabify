@@ -4,3 +4,6 @@
 .package.json
 tsconfig.json
 yarn.lock
+/lib
+/fixup.sh
+/index.ts

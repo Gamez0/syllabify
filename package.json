@@ -2,10 +2,16 @@
   "name": "@gamez0/syllabify",
   "version": "1.0.4",
   "description": "",
-  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "type": "module",
   "scripts": {
     "test": "mocha --reporter spec",
-    "build": "tsc"
+    "build": "rm -rf ./dist && tsup ./index.ts --format esm,cjs --dts --clean"
   },
   "repository": {
     "type": "git",

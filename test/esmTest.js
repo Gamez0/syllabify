@@ -1,8 +1,8 @@
 'use strict';
-const expect = require('chai').expect;
-const syllabify = require('../dist/index.js');
+import { expect } from 'chai';
+import { syllabify } from '../dist/index.mjs';
 
-describe('syllabify test', () => {
+describe('esm syllabify test', () => {
   it("should return ['mon','day']", () => {
     const result = syllabify('monday');
     expect(result[0]).to.equal('mon');
