@@ -2,13 +2,13 @@
   "name": "@gamez0/syllabify",
   "version": "1.0.6",
   "description": "",
+  "main": "dist/index.js",
   "exports": {
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     }
   },
-  "type": "module",
   "scripts": {
     "test": "mocha --reporter spec",
     "build": "rm -rf ./dist && tsup ./index.ts --format esm,cjs --dts --clean"
